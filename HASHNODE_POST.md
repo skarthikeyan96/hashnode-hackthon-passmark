@@ -27,6 +27,28 @@ StrideBoard is a great hackathon target because it is:
 - simple enough to iterate quickly
 - realistic enough to expose flaky automation patterns
 
+## About StrideBoard (product context)
+
+StrideBoard is a real-time community hype wall for runners preparing for race day.  
+The core user loop is simple: post a goal, get hyped by the community, and track momentum.
+
+What users can do:
+
+- post goal time, optional pace, and motivation
+- choose goal categories like Personal Best, Sub-60 Attempt, and First Ever Race
+- react to other runners with hype (`🔥`) interactions
+- follow community stats, countdown, and training progress widgets
+
+The app is intentionally lightweight and fast to ship:
+
+- frontend: vanilla HTML/CSS/JS
+- backend: Vercel Serverless Function for Redis proxy
+- data: Upstash Redis
+
+I wrote more about building StrideBoard here:
+
+- [How I Built a Real-Time Community Hype Wall for Runners Using Redis and Vercel](https://imkarthikeyans.hashnode.dev/how-i-built-a-real-time-community-hype-wall-for-runners-using-redis-and-vercel?utm_source=hashnode&utm_medium=feed)
+
 ## Setup
 
 I started from a Playwright TypeScript project and added Passmark + dotenv.

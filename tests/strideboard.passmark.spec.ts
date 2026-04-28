@@ -109,7 +109,6 @@ test.describe("StrideBoard Passmark regression suite", () => {
         },
       ],
       test,
-      expect,
     });
 
     await clickHypeForPostedGoal(page, hypeGoal);

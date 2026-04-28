@@ -14,11 +14,15 @@ import path from "path";
  * See https://playwright.dev/docs/test-configuration.
  */
 
-dotenv.config({ path: path.resolve(__dirname, ".env") });
+dotenv.config({ path: path.resolve(__dirname, ".env"), override: true });
 
 configure({
   ai: {
-    gateway: "openrouter"
+    gateway: "openrouter",
+    // models: {
+    //   stepExecution: "openrouter/free",
+    //   utility: "openrouter/free",
+    // },
   }
 });
 
